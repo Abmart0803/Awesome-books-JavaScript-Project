@@ -8,40 +8,48 @@ let books = [];
 
 const reterevedBooks = localStorage.getItem('books');
 
-function bookLists() {
-  let finalHtml = '';
 
-  books.forEach((book) => {
-    const htmlToInsert = `
-      <div>
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <button id="remove-book${book.id}"> Remove </button>
-      </div>
-      <hr>
-    `;
-    finalHtml += htmlToInsert;
-  });
-  bookList.innerHTML = finalHtml;
-}
-
-function removedBook() {
-  books.forEach((book) => {
-    const removeBtn = document.getElementById(`remove-book${book.id}`);
-    removeBtn.addEventListener('click', () => {
-      books = books.filter((element) => element.id !== book.id);
-
-      localStorage.setItem('books', JSON.stringify(books));
-      bookLists();
-      removedBook();
+class Book {
+  constructor(title, author, id) {
+    this.name = title;
+    this.author = author;
+    this.id = id;
+  }
+  static bookLists() {
+    let finalHtml = '';
+    books.forEach((book) => {
+      const htmlToInsert = `
+        <div>
+          <p>${book.title}</p>
+          <p>${book.author}</p>
+          <button id="remove-book${book.id}"> Remove </button>
+        </div>
+        <hr>
+      `;
+      finalHtml += htmlToInsert;
     });
-  });
+    bookList.innerHTML = finalHtml;
+  }
+  static removedBook() {
+    books.forEach((book) => {
+      const removeBtn = document.getElementById(`remove-book${book.id}`);
+      removeBtn.addEventListener('click', () => {
+        books = books.filter((element) => element.id !== book.id);
+  
+        localStorage.setItem('books', JSON.stringify(books));
+        Book.bookLists();
+        Book.removedBook();
+      });
+    });
+  }
 }
+
+
 
 if (reterevedBooks) {
   books.push(...JSON.parse(reterevedBooks));
-  bookLists();
-  removedBook();
+  Book.bookLists();
+  Book.removedBook();
 }
 
 form.addEventListener('submit', (e) => {
@@ -66,7 +74,7 @@ form.addEventListener('submit', (e) => {
     }
 
     localStorage.setItem('books', JSON.stringify(books));
-    bookLists();
-    removedBook();
+    Book.bookLists();
+    Book.removedBook();
   }
 });
