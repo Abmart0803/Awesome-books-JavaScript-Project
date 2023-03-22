@@ -16,34 +16,20 @@ class Book {
     this.id = id;
   }
 
-  static bookLists() {
-    let finalHtml = '';
-    books.forEach((book) => {
-      const htmlToInsert = `
-        <tr>
-          <td>${book.title}</td>
-          <td>${book.author}</td>
-          <td><button id="remove-book${book.id}"> Remove </button></td>
-        </tr>
-        
-      `;
-      finalHtml += htmlToInsert;
-    });
-    bookList.innerHTML = finalHtml;
-  }
-
-  static removedBook() {
-    books.forEach((book) => {
-      const removeBtn = document.getElementById(`remove-book${book.id}`);
-      removeBtn.addEventListener('click', () => {
-        books = books.filter((element) => element.id !== book.id);
-
-        localStorage.setItem('books', JSON.stringify(books));
-        Book.bookLists();
-        Book.removedBook();
-      });
-    });
-  }
+  static addBook() {
+    const book = new Book(nameInput.value, authorInput.value);
+    loadedBooks.push(book);
+    localStorage.setItem(storageKey, JSON.stringify(loadedBooks));
+    UI.loadBook();
+    nameInput.value = '';
+    authorInput.value = '';
+    }
+    
+    static deleteBook(i) {
+    loadedBooks.splice(i, 1);
+    localStorage.setItem(storageKey, JSON.stringify(loadedBooks));
+    UI.loadBook();
+    }
 }
 
 if (reterevedBooks) {
