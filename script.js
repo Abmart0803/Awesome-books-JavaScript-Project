@@ -6,7 +6,7 @@ const bookList = document.getElementById('books-list');
 
 let books = [];
 
-const reterevedBooks = localStorage.getItem('books');
+const reterevedBooks = localStorage.getItem('books') || [];
 
 class Book {
   constructor(title, author, id) {
