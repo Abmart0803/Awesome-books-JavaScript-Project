@@ -3,4 +3,10 @@ body {
   padding: auto;
 }
 
+.hide {
+  display: none;
+}
 
+.show {
+  display: block;
+}
