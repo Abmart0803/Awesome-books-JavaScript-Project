@@ -1,6 +1,71 @@
 body {
   margin-left: 40px;
-  padding: auto;
 }
 
+.table {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
 
+table.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  color: red;
+  font-size: larger;
+  align-content: center;
+  align-self: center;
+}
+
+.add {
+  padding-top: 10px;
+  padding-left: 130px;
+  align-content: end;
+  color: red;
+}
+
+#book-title,
+#book-author {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+button td {
+  width: 50px;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hr {
+  width: 20%;
+  border: 2px solid rgb(114, 113, 113);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  text-align: center;
+}
