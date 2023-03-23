@@ -99,10 +99,10 @@ Clone this repository to your desired folder:
 👤 **jonas-45**
 👤 **Yordanos Temesgen**
 
-__jonas-45__
-- GitHub: [@githubhandle](https://github.com/jonas-45) 
-- Twitter: [@twitterhandle](https://twitter.com/handel)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/handel/)
+__Abmart0803__
+- GitHub: [@githubhandle](https://github.com/Abmart0803) 
+- Twitter: [@twitterhandle](https://twitter.com/MartinsAbmart)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abmartcodingworld/)
 
 __Yordanos Temesgen__
 - GitHub: [@yordinia](https://github.com/yordinia)
@@ -124,7 +124,7 @@ __Yordanos Temesgen__
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Abmart0803/Awesome-books-JavaScript-Project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
