@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Awesome books</title>
-</head>
-<body>
-  <header>
-    <nav class="">
-          <a class="" href="#">Awesome Books</a>
-          <ul>
-              <li class="nav-li">
-                <a href="#">Book List </a>
-              </li>
-              <li class="nav-li">
-                <a class="nav-link" href="#">Add New</a>
-              </li>
-              <li class="nav-li">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Awesome books</title>
+  </head>
+  <body>
+    <header title="Header">
+      <h4>Awesome Books</h4>
+      <nav id="nav">
+        <ul id="ul">
+          <li class="books current" >List</li>
+          <li class="add-new" >Add new</li>
+          <li class="contact">Contact</li>
+        </ul>
       </nav>
-</header>
-<main>
-  <section id="books">
-    <h2>All Awesome Books</h2>
-    <table class="table">
-    <tbody id="books-list">
+    </header>
+    <main>
+      <div class="time-stamp">March 22nd 2023, 7:15:22 pm</div>
+      <div class="tabs">
+        <section id="books" class="tab">
+          <h1>All awesome Books</h1>
+          <div id="books-list"></div>
+        </section>
+        <section id="add-new" class="add-book hidden tab" title="Book List Section">
+          <h2>Add a new book</h2>
+          <form id="form" action="#">
+            <div>
+              <input id="book-title" type="text" placeholder="Title" />
+            </div>
+            <div>
+              <input id="book-author" type="text" placeholder="Author" />
+            </div>
+            <div>
+              <button id="add-button" type="submit">Add</button>
+            </div>
+          </form>
+        </section>
+        <section id="contact" class="contact-tab hidden tab">
+          <h2>Contact information</h2>
+          <p>
+            If you have any question regards our Awesome Book Apps <br />
+            Kindly reach out to us!
+          </p>
+          <ul>
+            <li>Our e-mail:info@awesomebookapps.com</li>
+            <li>Our phone number: +974 301 422 83</li>
+            <li>Our address: Ainkhalind, Doha, Qatar</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">Copyright @ Awsome Book Apps 2023.</p>
+      
+    </footer>
 
-    </tbody>
-    </table>
-  </section>
-  <section id="add">
-  <form id="form" action="#">
-    <div>
-      <input id="book-title" type="text" placeholder="Title">
-    </div>
-    <div>
-      <input id="book-author" type="text" placeholder="Author">
-    </div>
-    <div>
-      <button type="submit">Add</button>
-    </div>
-  </form>
-  </section>
-  <section id="contact">
-  <h2>Contact information</h2>
-  <p>
-      Do have any questions or you just want to say "Hello"? You can reach out to us!
-  </p>
-  <ul>
-      <li>Our e-mail: anemail@gmail.com</li>
-      <li>Our phone number: 0043586534422</li>
-      <li>Our address: street name number S20, 1000 Addis Ababa, Ghana</li>
-  </ul>
-  </section>
-</main>
-  
-<footer>
-    <p>©microverse 2022, Awesome Books | All Rights Reserved</p>
-</footer>
-<script src="/script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

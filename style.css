@@ -1,12 +1,152 @@
 body {
   margin-left: 40px;
-  padding: auto;
 }
 
-.hide {
+header {
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h4 {
+  margin: 2px 5px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border: 2px solid #000;
+  margin: 5px;
+}
+
+nav {
+  margin: 5px 10px;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  margin: initial;
+  gap: 5px;
+}
+
+nav li {
+  list-style: none;
+  border-right: 2px solid black;
+  padding-right: 5px;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+.contact {
+  border-right: none;
+}
+
+/* //Head Sectin styling........... */
+.time-stamp {
+  text-align: right;
+}
+
+.book-wrapper {
+  border: 3px solid black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.books {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gray-bg {
+  background-color: gray;
+}
+
+.books button {
+  padding: 2px 5px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  margin-right: 10px;
+}
+
+.books p {
+  margin: 5px 5px;
+}
+
+.add-book {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 8px;
+}
+
+.add-book input {
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.add-book input::placeholder {
+  color: black;
+}
+
+.btn-add {
+  background-color: #fff;
+}
+
+/* contact */
+
+.contact-tab {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  border: 2px solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.copyright {
+  font-weight: bold;
+  margin: 5px 10px;
+}
+
+/* Hidding tabs */
+
+.blocked {
   display: none;
 }
 
-.show {
-  display: block;
+.current {
+  color: purple;
 }
