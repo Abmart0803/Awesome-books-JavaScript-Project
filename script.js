@@ -1,4 +1,4 @@
-//Header Navbar.
+// Header Navbar.
 const navs = document.querySelectorAll('nav ul li');
 navs.forEach((element) => {
   element.addEventListener('click', () => {
@@ -12,7 +12,6 @@ navs.forEach((element) => {
     element.classList.add('current');
   });
 });
-
 
 const bookTitle = document.getElementById('book-title');
 const bookAuthor = document.getElementById('book-author');
