@@ -13,8 +13,6 @@ navs.forEach((element) => {
   });
 });
 
-
-
 const bookTitle = document.getElementById('book-title');
 const bookAuthor = document.getElementById('book-author');
 const form = document.getElementById('form');
